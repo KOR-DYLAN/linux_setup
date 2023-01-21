@@ -10,7 +10,8 @@ sudo apt install    build-essential gcc-multilib g++-multilib gdb cmake llvm lld
                     libssl-dev python3-dev python2.7-dev net-tools git vim neovim unzip font-manager \
                     libx11-dev libx11-6:i386 mkisofs powerline neovim curl barrier ssh imwheel meson tree \
 					qemu qemu-system qemu-system-arm qemu-efi qemu-efi-arm qemu-efi-aarch64 qemu-kvm \
-					qemu-system-common qemu-system-data qemu-system-gui qemubuilder qemu-user qemu-user-binfmt qemu-utils -y
+					qemu-system-common qemu-system-data qemu-system-gui qemubuilder qemu-user qemu-user-binfmt qemu-utils \
+					language-pack-en language-pack-ko -y
 
 echo "configuring ssh..."
 ssh-keygen -t rsa -f /home/$USER/.ssh/id_rsa -q -P ""
