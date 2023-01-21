@@ -29,7 +29,7 @@ sudo apt-get update
 sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 -y
 
 mkdir -p ~/.config
-git clone https://github.com/KOR-DYLAN/nvim.git ~/.config/
+git clone https://github.com/KOR-DYLAN/nvim.git ~/.config/nvim
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
 echo "configuring git..."
