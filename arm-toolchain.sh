@@ -42,7 +42,11 @@ else
     sudo apt install pv
 fi
 
+echo "" >> ~/.bashrc
+echo "# gnu arm toolchain" >> ~/.bashrc
 for i in $(echo $ARM_TARGETS | tr ":" " ")
 do
     pv gcc-arm-${ARM_VERSION}-${HOSTTYPE}-${i}.tar.xz | tar Jxp -C $TOOLCAHIN_BASE
+    ln -s $TOOLCAHIN_BASE/gcc-arm-${ARM_VERSION}-${HOSTTYPE}-${i} $TOOLCAHIN_BASE/${i}
+    echo export PATH="\$PATH:$TOOLCAHIN_BASE/${i}/bin" >> ~/.bashrc
 done

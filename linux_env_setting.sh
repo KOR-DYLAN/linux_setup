@@ -98,7 +98,7 @@ rm ~/.poshthemes/themes.zip
 echo "set .bashrc"
 echo "" >> ~/.bashrc
 echo "# oh-my-posh" >> ~/.bashrc
-echo eval \"$(oh-my-posh init bash --config ~/.poshthemes/amro.omp.json)\" >> .bashrc
+echo "eval \"\$(oh-my-posh init bash --config ~/.poshthemes/amro.omp.json)\"" >> ~/.bashrc
 echo "" >> ~/.bashrc
 echo "# alias" >> ~/.bashrc
 echo alias vi=\"nvim\" >> ~/.bashrc
